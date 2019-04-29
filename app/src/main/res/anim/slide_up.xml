@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 10:30 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 11/29/18 5:23 PM
+  ~  */
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+  <scale
+      android:duration="500"
+      android:fromXScale="1.0"
+      android:fromYScale="1.0"
+      android:interpolator="@android:anim/linear_interpolator"
+      android:toXScale="1.0"
+      android:toYScale="0.0"/>
+
+</set>

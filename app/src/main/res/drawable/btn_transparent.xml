@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 2:00 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 3/4/19 11:00 AM
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="kitkat">
+
+  <item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+      <solid android:color="@color/transparent"/>
+
+      <corners android:radius="@dimen/dimen5"/>
+
+    </shape>
+  </item>
+
+</selector>

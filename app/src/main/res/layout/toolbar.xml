@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 10:30 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 12/1/18 4:50 AM
+  ~  */
+  -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/colorPrimary"
+      app:subtitleTextColor="@color/white"
+      app:titleTextColor="@color/white"
+      >
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dimen5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size18"
+        />
+
+  </android.support.v7.widget.Toolbar>
+
+</layout>

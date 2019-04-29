@@ -1,0 +1,57 @@
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/6/19 3:51 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 3/6/19 3:29 PM
+  ~  */
+  -->
+
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <!-- color of bottom line of editText -->
+    <item name="colorControlNormal">@color/gray</item>
+
+    <item name="android:listDivider">@color/colorPrimary</item>
+
+    <!-- Color of option menu text -->
+    <item name="actionMenuTextColor">@color/white</item>
+
+    <!-- App Font -->
+    <item name="fontFamily">@font/neusa_next_std_regular</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="TextBoldFont">
+    <item name="android:textSize">@dimen/text_size16</item>
+    <item name="android:textStyle">bold</item>
+    <item name="fontFamily">@font/neusa_next_std_bold</item>
+  </style>
+
+  <style name="TextMediumFont">
+    <item name="android:textSize">@dimen/text_size14</item>
+    <item name="fontFamily">@font/neusa_next_std_medium</item>
+  </style>
+
+  <style name="CustomTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/text_size16</item>
+    <item name="android:textAllCaps">false</item>
+  </style>
+
+  <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <!-- Label color when editText is selected -->
+    <item name="android:textColor">@color/colorAccent</item>
+  </style>
+
+</resources>

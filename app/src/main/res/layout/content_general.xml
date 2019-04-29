@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 10:30 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 12/4/18 1:56 PM
+  ~  */
+  -->
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:id="@+id/empty_view_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="gone"
+          tools:ignore="UseCompoundDrawables"
+          >
+
+        <ImageView
+            android:id="@+id/iv_no_result"
+            android:layout_width="@dimen/dimen200"
+            android:layout_height="@dimen/dimen200"
+            app:srcCompat="@drawable/bg_no_result"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:text="@string/list_no_result"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            style="@style/TextBoldFont"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/internet_error_view_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="gone"
+          tools:ignore="UseCompoundDrawables"
+          >
+
+        <ImageView
+            android:layout_width="@dimen/dimen200"
+            android:layout_height="@dimen/dimen200"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@drawable/bg_no_internet"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:text="@string/no_internet"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            style="@style/TextBoldFont"
+            />
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/reload_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="48dp"
+          android:layout_margin="@dimen/dimen5"
+          android:background="@drawable/btn_primary"
+          android:elevation="2dp"
+          android:paddingEnd="@dimen/dimen36"
+          android:paddingStart="@dimen/dimen36"
+          android:text="@string/reload"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:visibility="gone"
+          tools:targetApi="lollipop"
+          />
+
+      <com.github.ybq.android.spinkit.SpinKitView
+          android:id="@+id/progress_bar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          app:SpinKit_Color="@color/colorAccent"
+          style="@style/SpinKitView.Large.Wave"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</layout>

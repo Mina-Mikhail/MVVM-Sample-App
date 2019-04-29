@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name" translatable="false">MVVM Sample App</string>
+
+  <!-- Handle Errors -->
+  <string name="try_again">Something went wrong, please try again later</string>
+  <string name="no_internet">No internet connection</string>
+  <string name="some_error">Some error occurred</string>
+  <string name="list_no_result">Sorry, There is no results here.</string>
+  <string name="reload">Reload</string>
+  <string name="hide">Hide</string>
+  <string name="no_image">No Image</string>
+  <string name="token_expired">Sorry your session has been expired, you need to login again.</string>
+
+</resources>

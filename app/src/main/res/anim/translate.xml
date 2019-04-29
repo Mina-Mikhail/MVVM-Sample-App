@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 10:30 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 11/29/18 5:23 PM
+  ~  */
+  -->
+
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <translate
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:duration="500"
+      android:fromXDelta="0%"
+      android:fromYDelta="200%"
+      android:toXDelta="0%"
+      android:toYDelta="0%"
+      android:zAdjustment="top"/>
+
+</set>

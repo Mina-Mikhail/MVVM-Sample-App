@@ -1,0 +1,88 @@
+/*
+ * *
+ *  * Created by Mina Mikhail on 3/6/19 12:34 PM
+ *  * Copyright (c) 2019 . All rights reserved.
+ *  * Last modified 3/6/19 12:28 PM
+ *
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+  ext {
+    compile_sdk_version = 28
+    min_sdk_version = 17
+
+    support_version = '28.0.0'
+    arch_comp_version = '1.1.1'
+    multidex = '1.0.3'
+
+    rounded_image_view = '2.3.0'
+    circle_imageview = '3.0.0'
+    sneaker = '1.0.2'
+
+    rxjava = '2.2.0'
+    rxandroid = '2.0.2'
+    rxbinding = '2.0.0'
+    uber_autodispose = '1.1.0'
+
+    retrofit = '2.5.0'
+    gson = '2.8.5'
+    stetho = '1.5.0'
+
+    firebase_core = '16.0.8'
+    firebase_messaging = '17.5.0'
+    firebase_iid = '17.1.1'
+    crash_lytics = '2.9.9'
+
+    glide = '4.4.0'
+    picasso = '2.5.2'
+
+    timber = '4.5.1'
+    interceptor = '3.9.0'
+    butterknife = '8.8.1'
+    parceler_api = '1.1.11'
+    blur_dialog_fragment = '2.2.0'
+    loading_animations = '1.2.0'
+
+    junit = '4.12'
+    support_test_runner = '1.0.2'
+    support_test_espresso = '3.0.2'
+  }
+  repositories {
+    google()
+    jcenter()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://maven.fabric.io/public' }
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.3.2'
+    classpath 'com.google.gms:google-services:4.2.0'
+    classpath 'io.fabric.tools:gradle:1.28.0'
+
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.google.com' }
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+tasks.whenTaskAdded { task ->
+  if (task.name == "lint") {
+    task.enabled = false
+  }
+}

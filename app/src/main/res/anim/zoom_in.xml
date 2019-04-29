@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 10:30 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 11/29/18 5:23 PM
+  ~  */
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+  <scale
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:duration="1000"
+      android:fromXScale="0.7"
+      android:fromYScale="0.7"
+      android:pivotX="50%"
+      android:pivotY="50%"
+      android:toXScale="1"
+      android:toYScale="1">
+  </scale>
+</set>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 10:30 AM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 1/14/19 6:48 PM
+  ~  */
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen5"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dimen1"
+      android:background="@drawable/bg_toast"
+      android:elevation="5dp"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:padding="@dimen/dimen10"
+      tools:ignore="UselessParent"
+      tools:targetApi="lollipop"
+      >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size14"
+        />
+
+    <View
+        android:layout_width="@dimen/dimen1"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen5"
+        android:alpha="0.7"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/dimen5"
+        android:gravity="center"
+        android:text="@string/hide"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size16"
+        style="@style/TextBoldFont"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mina Mikhail on 3/4/19 3:25 PM
+  ~  * Copyright (c) 2019 . All rights reserved.
+  ~  * Last modified 3/4/19 3:09 PM
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimen350"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/dimen16"
+      android:background="@drawable/bg_round_pop_up"
+      android:elevation="3dp"
+      android:orientation="vertical"
+      android:padding="@dimen/dimen16"
+      tools:ignore="UselessParent"
+      tools:targetApi="lollipop"
+      >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen10"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size18"
+        style="@style/TextBoldFont"
+        />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen16"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size14"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+      <Button
+          android:id="@+id/negative_btn"
+          android:layout_width="0dp"
+          android:layout_height="@dimen/dimen40"
+          android:layout_margin="@dimen/dimen3"
+          android:layout_weight="1"
+          android:background="@drawable/btn_transparent"
+          android:clickable="true"
+          android:focusable="true"
+          android:gravity="center"
+          android:textAllCaps="true"
+          android:textColor="@color/red"
+          style="@style/TextBoldFont"
+          />
+
+      <Button
+          android:id="@+id/positive_btn"
+          android:layout_width="0dp"
+          android:layout_height="@dimen/dimen40"
+          android:layout_margin="@dimen/dimen3"
+          android:layout_weight="2"
+          android:background="@drawable/btn_accent"
+          android:gravity="center"
+          android:textAllCaps="true"
+          android:textColor="@color/white"
+          style="@style/TextBoldFont"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
